@@ -3,7 +3,9 @@ body{
   text-align: center;
   font-family: 'Merriweather', serif;
 }
-
+table, th, td {
+  border: 1px solid black;
+}
 h1{
   margin-top: 0;
   font-size: 3em;
