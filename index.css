@@ -20,6 +20,18 @@ h3{
   color: #66BFBF;
   font-family: 'Mobtserrat', sans-serif;
 }
+.mountain{
+  max-width: 50%;
+  height: auto;
+}
+.top-cloud{
+  max-width: 30%;
+  height: auto; 
+}
+.bottom-cloud{
+  max-width: 30%;
+  height: auto; 
+}
 .my-pic{
   border-radius: 30%;
   width: 300px;
