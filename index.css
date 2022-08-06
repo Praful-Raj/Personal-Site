@@ -60,12 +60,12 @@ h3{
 .top-cloud{
 
   position: absolute;
-  right: 400px;
+  right: 300px;
   top: 50px;
 }
 .bottom-cloud{
   position: absolute;
-  left: 300px;
+  left: 250px;
   top: 200px;
 }
 .mountain{
