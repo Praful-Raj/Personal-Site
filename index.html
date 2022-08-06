@@ -31,92 +31,180 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav {
+  right: 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 </style>
+    
   </head>
   <body>
-    <div class="top-container">
-      <img class="top-cloud"src="CSS - My Site Images/cloud.png" alt="cloud-img">
-
-      <h1>I'm Praful.</h1>
-      <h3>a student.</h3>
-      <img class="bottom-cloud"src="CSS - My Site Images/cloud.png" alt="cloud-img">
-      <img class="mountain"src="CSS - My Site Images/mountain.png" alt="mountain-img">
-
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#about">About</a>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects and Internship</a>
+      <a href="#contact">Contact</a>
     </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img class="my-pic"src="CSS - My Site Images/Praful Raj1.png" alt="Praful's image">
-        <h2>Hello.</h2>
-        <p>I am Praful Raj. A simple guy. Presently pursuing Btech. Foodie, music lover.</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="gif" src="https://media.giphy.com/media/VGh13y4IVFZzCACfTX/giphy.gif" alt="">
-          <h3>Life experience!!</h3>
-          <p>Its told that life experience is everything which a person needs to move forward in an delight way without any nagging. Can assure its achieved by me.</p>
+    <span style="font-size:30px;cursor: grab;align-items: flex-start;" onclick="openNav()">&#9776;</span>
+    
+    <section class="about" id="about">
+        <div class="top-container">
+          <img class="top-cloud"src="CSS - My Site Images/cloud.png" alt="cloud-img">
+
+          <h1>I'm Praful.</h1>
+          <h3>a student.</h3>
+          <img class="bottom-cloud"src="CSS - My Site Images/cloud.png" alt="cloud-img">
+          <img class="mountain"src="CSS - My Site Images/mountain.png" alt="mountain-img">
+
         </div>
-        <div class="skill-row">
-          <h2>Apart from that studying skills:</h2>
-          <img class="books" src="books-stack-of-three.png" alt="studies">
+    </section>
+    
+      <section class="profile" id="profile">
+        <div class="middle-container">
+          <div class="profile">
+            <img class="my-pic"src="CSS - My Site Images/Praful Raj1.png" alt="Praful's image">
+            <h2>Hello.</h2>
+            <p>I am Praful Raj. A simple guy. Presently pursuing Btech. Foodie, music lover.</p>
+          </div>
+          <hr>
+       </section>
+      
+      <section class="skills" id="skills">
+          <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+              <img class="gif" src="https://media.giphy.com/media/VGh13y4IVFZzCACfTX/giphy.gif" alt="">
+              <h3>Life experience!!</h3>
+              <p>Its told that life experience is everything which a person needs to move forward in an delight way without any nagging. Can assure its achieved by me.</p>
+            </div>
+            <div class="skill-row">
+              <h2>Apart from that studying skills:</h2>
+              <img class="books" src="books-stack-of-three.png" alt="studies">
 
-          <h3>GCP-Cloud, DevOps, C/C++, Python, JAVA, AngularJS, Spring Boot, HTML, CSS </h3>
-          <p>Its enthusiastic when coming to explore something new, learn something new. Not much fond of programming, wanna have knowledge of each[atleast basic].</p>
+              <h3>GCP-Cloud, DevOps, C/C++, Python, JAVA, AngularJS, Spring Boot, HTML, CSS </h3>
+              <p>Its enthusiastic when coming to explore something new, learn something new. Not much fond of programming, wanna have knowledge of each[atleast basic].</p>
+            </div>
+          </div>
+          <hr>
+       </section>
+      </div>
+    
+      <section class="projects" id="projects">    
+          <div class="my_works">
+            <h2>Projects and seminars :</h2>
+                <table style="width:100%">
+              <tr>
+                <th>Work Type</th>
+                <th>Topic</th>
+                <th>Doc.</th>
+              </tr>
+              <tr>
+                <td>Major Project at College Level</td>
+                <td>Potholes and Humps detection using IoT</td>
+                <td>
+                  <a href="Potholes and Humps detection.pdf" target="_blank">Click Me </a><p> to have a look at my Potholes and Humps detection project</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Project</td>
+                <td>Line Follower Robot</td>
+                <td>
+
+                 <a href="LFR Miniproject seminar report.pdf" target="_blank">Click Me</a><p> to have a look at my Line Follower Robot Project</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Internship Report</td>
+                <td>Electric Vehicle Intern</td>
+                <td>
+                    <a href="PRAFULRAJ_InternshipReport.pdf" target="_blank">Click Me </a><p> to have a look at Internship work</p>
+                </td>
+              </tr>
+            </table>
+          <hr >
+
+
+          </div>
+        </section>
+        
+      <section class="contact" id="contact">
+          <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3></h3>
+            <p>Coz all what matters is communication!! </p>
+            <a class="footer-link" href="https://praful-raj.github.io/Contact_Praful/">CONTACT ME</a>
+          </div>
+      </div>
+
+
+        <div class="bottom-container">
+          <a class="footer-link" href="https://www.linkedin.com/in/praful-raj-0b201416b">LinkedIn</a>
+          <a class="footer-link" href="https://www.instagram.com/_praful_raj_?r=nametag">Instagram</a>
+          <a href="CV-1.pdf" target="_blank">My_CV</a>
+          <p>© 2018 Praful Raj.</p>
         </div>
-      </div>
-      <hr>
-      </div>
-      <div class="my_works">
-        <h2>Projects and seminars :</h2>
-            <table style="width:100%">
-          <tr>
-            <th>Work Type</th>
-            <th>Topic</th>
-            <th>Doc.</th>
-          </tr>
-          <tr>
-            <td>Major Project at College Level</td>
-            <td>Potholes and Humps detection using IoT</td>
-            <td>
-              <a href="Potholes and Humps detection.pdf" target="_blank">Click Me </a><p> to have a look at my Potholes and Humps detection project</p>
-            </td>
-          </tr>
-          <tr>
-            <td>Project</td>
-            <td>Line Follower Robot</td>
-            <td>
-              
-             <a href="LFR Miniproject seminar report.pdf" target="_blank">Click Me</a><p> to have a look at my Line Follower Robot Project</p>
-            </td>
-          </tr>
-          <tr>
-            <td>Internship Report</td>
-            <td>Electric Vehicle Intern</td>
-            <td>
-                <a href="PRAFULRAJ_InternshipReport.pdf" target="_blank">Click Me </a><p> to have a look at Internship work</p>
-            </td>
-          </tr>
-        </table>
-      <hr >
+    </section>
+  <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
 
-
-      </div>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3></h3>
-        <p>Coz all what matters is communication!! </p>
-        <a class="footer-link" href="https://praful-raj.github.io/Contact_Praful/">CONTACT ME</a>
-      </div>
-    </div>
-
-
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/praful-raj-0b201416b">LinkedIn</a>
-      <a class="footer-link" href="https://www.instagram.com/_praful_raj_?r=nametag">Instagram</a>
-      <a href="CV-1.pdf" target="_blank">My_CV</a>
-      <p>© 2018 Praful Raj.</p>
-    </div>
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+  </script>
 
   </body>
 </html>
