@@ -70,11 +70,14 @@ h3{
 }
 .nav{
   box-sizing: border-box;
-  z-index: 0;
+  z-index: 1000;
   padding: 1rem 1.5rem;
   position: fixed;
   top: .25rem;
   left: .25rem;
+}
+.sidenav{
+  text-align: center;
 }
 .mountain{
   position:center;
