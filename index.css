@@ -68,6 +68,14 @@ h3{
   left: 280px;
   top: 200px;
 }
+.nav{
+  box-sizing: border-box;
+  z-index: 0;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: .25rem;
+  left: .25rem;
+}
 
 .mountain{
   position:center;
