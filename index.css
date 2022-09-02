@@ -23,14 +23,17 @@ h3{
 .mountain{
   max-width: 50%;
   height: auto;
+  width: 50%
 }
 .top-cloud{
   max-width: 30%;
   height: auto; 
+  width: 30%;
 }
 .bottom-cloud{
   max-width: 30%;
-  height: auto; 
+  height: auto;
+  width: 30%;
 }
 .my-pic{
   border-radius: 30%;
