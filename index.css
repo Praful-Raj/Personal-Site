@@ -25,19 +25,10 @@ h3{
   height: auto;
   width: 50%
 }
-.top-cloud{
-  max-width: 10%;
-  height: auto; 
-}
-.bottom-cloud{
-  max-width: 10%;
-  height: auto;
-}
 .my-pic{
   border-radius: 30%;
   width: 300px;
   height: 300px;
-
 }
 .CV{
   width: 75%;
