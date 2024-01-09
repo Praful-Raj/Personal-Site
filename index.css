@@ -72,3 +72,7 @@ h3{
 .mountain{
   position:center;
 }
+
+.parallax{
+  background-attachment: fixed;
+}
