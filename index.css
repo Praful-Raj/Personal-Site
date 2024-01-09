@@ -74,5 +74,6 @@ h3{
 }
 
 .parallax{
+  background-image: src("CSS - My Site Images/mountain.png");
   background-attachment: fixed;
 }
