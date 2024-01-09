@@ -71,9 +71,14 @@ h3{
 
 .mountain{
   position:center;
+  z-index: 1;
 }
 
-.parallax{
-  background-image: src("CSS - My Site Images/mountain.png");
-  background-attachment: fixed;
+.mountain, .top-cloud, .bottom-cloud{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
